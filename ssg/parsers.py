@@ -1,6 +1,6 @@
+import shutil
 from typing import List
 from pathlib import Path
-import shutil
 
 class parser:
    def __init__(self, extensions):
@@ -24,7 +24,7 @@ class parser:
 
    def write(self, path, dest, content):
       ext = ".html"
-      full_path = (self.dest / with_suffix(self.path).name / ext
+      full_path = (self.dest / with_suffix(self.path).name / ext)
 
    def copy(self, path, source, dest):
       shutil.copy2(path, dest / path.relative_to(source))
