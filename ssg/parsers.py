@@ -27,7 +27,7 @@ class parser:
       full_path = (self.dest / with_suffix(self.path).name / ext
 
    def copy(self, path, source, dest):
-       shutil.copy2(path, dest/source)
+      shutil.copy2(path, dest / path.relative_to(source))
 
 
    class ResourceParser:
