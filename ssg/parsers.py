@@ -2,7 +2,7 @@ from typing import List
 from pathlib import Path
 import shutil
 
-class Parser:
+class parser:
    def __init__(self, extensions):
       #initialize variables
       extensions = []
@@ -26,7 +26,7 @@ class Parser:
       ext = ".html"
       full_path = (self.dest / with_suffix(self.path).name / ext
 
-   def copy(self, path, source, dest)
+   def copy(self, path, source, dest):
       shutil.copy2(self.path, self.dest/self.source)
 
 
