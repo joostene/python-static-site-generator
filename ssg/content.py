@@ -41,9 +41,10 @@ class Content(Mapping):
 
    def __repr__(self):
       data = {}
-      str(self.data)
+      for key, value in self.data.items():
+         if key != "content":
+            data[key] = value
+      return str(data)
 
-   for key, value in self.data.items():
-      if key is not "content":
-         data[key] = value
+
 
