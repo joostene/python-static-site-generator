@@ -2,7 +2,7 @@ import shutil
 from typing import List
 from pathlib import Path
 
-class parser:
+class Parser:
    def __init__(self, extensions):
       #initialize variables
       extensions = []
