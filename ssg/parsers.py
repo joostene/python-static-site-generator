@@ -19,7 +19,7 @@ class Parser:
       raise NotImplementedError("No Path")
 
    def read(self, path):
-      with open(path, r) as file
+      with open(self.path, 'r') as file:
          return file.read()
 
    def write(self, path, dest, content):

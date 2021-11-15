@@ -18,7 +18,7 @@ class Site:
 
     def run_parser(self, path):
        parser = self.load_parser(path.suffix)
-       if parser != None:
+       if parser is not None:
           Parser.parse(self.path, self.source, self.dest)
        else:
           print("Not implemented")
