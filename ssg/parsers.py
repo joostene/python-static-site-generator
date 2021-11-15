@@ -4,10 +4,10 @@ from pathlib import Path
 
 class Parser:
       #initialize variables
-      extensions:List[str] = []
+   extensions:List[str] = []
 
    def valid_extension(self, extension):
-      return self.extension in self.extensions
+      return extension in self.extensions
 
    def parse (self, path:Path, source:Path, dest:Path):
       raise NotImplementedError
