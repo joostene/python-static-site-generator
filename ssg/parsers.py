@@ -49,12 +49,12 @@ class MarkdownParser(Parser):
       sys.stdout.write("\x1b[1;32m{} converted to HTML. Metadata: {}\n") + format(path.name, content)
 
 
- class ReStructuredTextParser(Parser):
-    extensions = [".rst"]
+class ReStructuredTextParser(Parser):
+   extensions = [".rst"]
 
-    def parse (self, path, source, dest):
-       content = content.load(self.read(path))
-       publish_parts(content.boday, writer_name = "html15")
-       html = self.write(path, html["html_body"], content, ext)
-       sys.stdout.write("\x1b[1;32m{} converted to HTML. Metadata: {}\n") + format(path.name, content)
+   def parse (self, path, source, dest):
+      content = content.load(self.read(path))
+      publish_parts(content.boday, writer_name = "html15")
+      html = self.write(path, html["html_body"], content, ext)
+      sys.stdout.write("\x1b[1;32m{} converted to HTML. Metadata: {}\n") + format(path.name, content)
 
